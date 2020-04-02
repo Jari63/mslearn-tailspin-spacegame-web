@@ -22,7 +22,7 @@ steps:
       versionSpec: "5.4.0"
 
   - task: Npm@1
-    displayName: "Run npm install YYY"
+    displayName: "Run npm install YYY ZZZ"
     inputs:
       verbose: false
 
@@ -30,7 +30,7 @@ steps:
     displayName: "Compile Sass assets"
 
   - task: gulp@1
-    displayName: "Run gulp tasks XXX"
+    displayName: "Run gulp tasks"
 
   - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
     displayName: "Write build info"
