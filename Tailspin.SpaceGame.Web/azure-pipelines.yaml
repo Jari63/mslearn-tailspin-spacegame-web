@@ -13,7 +13,7 @@ variables:
 
 steps:
   - task: UseDotNet@2
-    displayName: "Use .NET Core SDK $(dotnetSdkVersion)"
+    displayName: "XXX Use .NET Core SDK $(dotnetSdkVersion)"
     inputs:
       version: "$(dotnetSdkVersion)"
 
@@ -22,7 +22,7 @@ steps:
       versionSpec: "5.4.0"
 
   - task: Npm@1
-    displayName: "Run npm install YYY ZZZ"
+    displayName: "Run npm install"
     inputs:
       verbose: false
 
